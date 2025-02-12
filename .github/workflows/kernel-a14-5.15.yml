@@ -1,4 +1,4 @@
-name: Build Android 14 5.15 GKI Kernels
+name: Android 14 5.15
 
 on:
   workflow_call:  # This allows this workflow to be called from another workflow
@@ -40,6 +40,8 @@ jobs:
             os_patch_level: "2024-08"
           - sub_level: "167"
             os_patch_level: "2024-11"
+          - sub_level: "170"
+            os_patch_level: "2025-01"
           - sub_level: "X"
             os_patch_level: "lts"
     uses: ./.github/workflows/gki-kernel.yml
